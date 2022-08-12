@@ -1,0 +1,4 @@
+let dateThen = new Date(2023,02,01,0,0,0);
+let dateNow = new Date();
+let output = Math.floor((dateThen.getTime()-dateNow.getTime()) / (1000 * 3600 * 24) - 27);
+console.log(`К-во дней до дедлайна: ${output}`)
