@@ -1,0 +1,266 @@
+$text_color: #fff
+$why-us_color: #1eacc7
+*
+  font-family: 'Roboto', sans-serif
+
+body
+  padding-top: 48px
+
+header
+  position: relative
+
+nav
+  height: 50px
+  background-color: #212121
+
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style-type: none
+
+  .menu_link
+    font-size: 15px
+    font-weight: 300
+    color: $text_color
+    text-decoration: none
+
+  .menu_item
+    border-right: 2px dotted black
+    padding-right: 32px
+
+.subheader
+  position: absolute
+  width: 100%
+  height: 84px
+  background-color: rgba(0, 0, 0, 60%)
+
+  .subheader_logo
+    display: block
+    max-width: 100%
+    margin-top: 16px
+    margin-bottom: 6px
+
+  .subheader_official
+    opacity: 0.5
+    font-size: 13px
+    font-weight: 100
+    color: rgba(255, 255, 255, 0.5)
+
+  .subheader_call
+    font-size: 12px
+    font-weight: 300
+    color: $text_color
+    margin-top: 23px
+    line-height: 12px
+    text-align: right
+
+  .subheader_phone
+    font-size: 22px
+    font-weight: 400
+    color: $text_color
+    text-decoration: none
+    text-align: right
+    display: block
+
+  .subheader_btn
+    width: 172px
+    height: 46px
+    margin-top: 19px
+    box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12)
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+    border-radius: 4px
+    font-size: 14px
+    font-weight: normal
+    text-align: center
+    text-transform: uppercase
+    color: $text_color
+
+.promo
+  min-height: 800px
+  background: url(../img/BG_1.1.png) center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+
+  .promo_header
+    font-size: 60px
+    font-weight: 900
+    text-align: center
+    color: $text_color
+    line-height: 50px
+    margin: 0
+    margin-top: 67px
+
+  .promo_subheader
+    font-size: 36px
+    font-weight: 700
+    text-align: center
+    color: $text_color
+    line-height: 30px
+    margin: 0
+    margin-top: 20px
+    margin-bottom: 23px
+
+  .promo_descr
+    font-size: 18px
+    font-weight: 300
+    line-height: 23px
+    text-align: center
+    color: $text_color
+
+  .promo_button
+    display: block
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12)
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+    border-radius: 4px
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
+    font-size: 18px
+    font-weight: 400
+    text-align: center
+    color: $text_color
+
+.why-us
+  min-height: 900px
+  padding-top: 71px
+
+.label
+  margin: 0 auto
+  padding-top: 4px
+  height: 24px
+  width: 112px
+  font-size: 11px
+  font-weight: 100
+  text-align: center
+  color: $text_color
+  background: #000
+  text-transform: uppercase
+
+.title
+  display: flex
+  justify-content: center
+  font-size: 38px
+  font-weight: bold
+  color: #222
+  text-transform: uppercase
+  line-height: 30px
+  margin-top: 35px
+
+.subtitle
+  font-size: 17px
+  font-weight: normal
+  text-align: center
+  color: #222
+  margin-top: 19px
+
+.why-us_list li
+  padding: 0
+
+.why_us_icon-wrapper
+  display: flex
+  align-items: center
+  margin-bottom: 60px
+
+.why-us_list
+  list-style-type: none
+  margin-top: 40px
+
+.why-us_item
+  display: flex
+  margin-bottom: 25px
+  justify-content: right
+
+  &:nth-child(even)
+    padding-right: 115px
+
+  &:nth-child(odd)
+    padding-right: 100px
+
+.why-us_icon
+  width: 113px
+  height: 113px
+  background: $why-us_color
+  border-radius: 50%
+  text-align: center
+  line-height: 113px
+  margin-right: 26px
+  margin-top: 10px
+
+.why-us_descr
+  width: 380px
+
+.why-us_item:nth-child(even)
+  align-items: top
+
+.why-us_descr span
+  font-size: 17px
+  font-weight: normal
+  color: $why-us_color
+
+.mobile
+  min-height: 863px
+  padding: 48px 0 79px 0
+  background: url('../img/grid-1.png') center (center / cover) no-repeat
+  .row
+    margin-top: 32px
+
+  &_item
+    width: 320px
+    height: 280px
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 92px
+    position: relative
+    &_1
+      background: url(../img/opportunity-bg-1.png) center (center / cover) no-repeat
+    &_2
+      background: url(../img/opportunity-bg-2.png) center (center / cover) no-repeat
+    &_3
+      background: url(../img/opportunity-bg-3.png) center (center / cover) no-repeat
+    &_4
+      background: url(../img/opportunity-bg-4.png) center (center / cover) no-repeat
+    &_5
+      background: url(../img/opportunity-bg-5.png) center (center / cover) no-repeat
+    &_6
+      background: url(../img/opportunity-bg-6.png) center (center / cover) no-repeat
+    &_subtitle
+      font-size: 24px
+      font-weight: normal
+      text-align: center
+      color: $text_color
+      text-transform: uppercase
+    &_plus
+      width: 26px
+      height: 26px
+      margin: 0 auto
+      cursor: pointer
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translateX(-50%)
+
+.choice
+  min-height: 895px
+  padding: 57px 0 138px 0
+  background: url('../img/BG-2.1.png') center (center / cover) no-repeat
+  .label
+    background-color: #fff
+    color: #070716
+    font-weight: 400
+  .title
+    color: #fff
+  .subtitle:nth-child(odd)
+    color: #fff
+  .uberX
+    text-align: center
+    padding-top: 80px
+    padding-bottom: 350px
+  &_descr
+    width: 300px
+    font-size: 17px
+    font-weight: 300
+    text-align: center
+    color: #222
+    margin: 0 auto
