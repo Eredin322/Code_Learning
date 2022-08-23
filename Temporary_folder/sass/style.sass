@@ -1,24 +1,29 @@
-$text_color: blue
-= box
-  display: block
+*
+  box-sizing: border-box
+button
   width: 250px
-  height: 200px
-  background: red
-
-h1
-  color: $text_color
-  font-size: 50px
-  background-color: $text_color
-  +box
-h2
-  color: blue
-  font-size: 25px
-  background-color: $text_color
-.block
-  background-color: $text_color
-  h3
-    color: white
-  &_color
-    background-color: $text_color
-    button
-      width: 250px
+  height: 50px
+  background-color: #ffe66b
+  border: none
+  curson: pointer
+  transition: 0.5s all
+  &:hover
+    background-color: pink
+    color: #fff
+  &:active
+    background-color: orange
+  &:focus
+    background-color: gray
+.circle
+  &:nth-child(2n)
+    background-color: red
+  &:after
+    content: ''
+    display: block
+    height: 2px
+    width: 0%
+    background: #000
+    transition: 0.5s all
+  &:hover
+    &:after
+      width: 100%
