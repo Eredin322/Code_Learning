@@ -22,7 +22,7 @@ nav
     color: $text_color
     text-decoration: none
     &:hover
-      color: $second-color
+      color: $first-color
       text-decoration: none
   &_item
     border-right: 2px dotted black
@@ -66,7 +66,7 @@ nav
     text-align: right
     display: block
     &:hover
-      color: $second-color
+      color: $first-color
       text-decoration: none
 
   &_btn
@@ -380,6 +380,14 @@ nav
 .footer
   min-height: 156px
   padding: 0 23px 0 23px
+  &_line
+    display: block
+    width: 299px
+    height: 4px
+    background-color: $first_color
+    margin: 0 auto
+    margin-top: 14px
+    margin-bottom: 25px
   &_wrapper
     display: flex
     justify-content: space-between
@@ -389,7 +397,6 @@ nav
     display: flex
     align-items: center
     justify-content: center
-    width: 25%
     a
       border-radius: 100%
       border: 1px solid black
@@ -406,21 +413,15 @@ nav
         img
           width: 32px
           height: 32px
+      &:last-child
+        margin-right: 0
   &_menu
     display: flex
     align-items: center
     justify-content: top
     flex-direction: column
-    width: 50%
     margin: 0 auto
-  &_line
-    display: block
-    width: 299px
-    height: 4px
-    background-color: $first_color
-    margin: 0 auto
-    margin-top: 14px
-    margin-bottom: 25px
+
   &_list
     display: flex
     align-items: center
@@ -463,8 +464,14 @@ nav
     align-self: center
     width: 300px
     height: 30px
-    &_item
-      img
-        width: 100%
+  .block
+    width: 282px
+    height: 25px
+    &:nth-child(2)
+      width: 450px
+      height: 80px
+    &:last-child
+      width: 300px
+
 .xs-visible
   display: none
